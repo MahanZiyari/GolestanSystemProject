@@ -1,5 +1,3 @@
-<<<<<<< HEAD
 # GolestanSystemProject
-=======
-# Golestan-System
->>>>>>> new repository, entire project
+new repository, entire project
+developed by Mahan Ziyari, Nazanin Zibaei, Leila parvar
