@@ -1,0 +1,75 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:20:p, comp iconLbl:::p:183:p, space u:::p, comp titleLbl:::p:365:p}, seq l {space :p:200:p, par l {comp nameLbl::l:p:115:p, comp idLbl::l:p:115:p, comp postLbl::l:p:115:p, comp salaryLbl::l:p:115:p}, space :p:80:p, par l {comp salaryTxt:::p:234:p, comp postTxt:::p:234:p, comp idTxt:::p:234:p, comp nameTxt:::p:234:p}}}, space ::156:x}, seq t {space :0:450:x, comp button2:::p:152:p, space u:::p, comp backButton:::p:152:p, space :p:19:p}}"
+			"$verticalGroup": "par l {seq {par l {seq {space :p:17:p, comp iconLbl:::p::p}, seq {space :p:42:p, comp titleLbl:::p:86:p}}, space :::p, par b {comp nameLbl::b:p:45:p, comp nameTxt::b:p:45:p}, space s:::p, par b {comp idLbl::b:p:45:p, comp idTxt::b:p:45:p}, space s:::p, par b {comp postLbl::b:p:45:p, comp postTxt::b:p:45:p}, space s:::p, par b {comp salaryLbl::b:p:45:p, comp salaryTxt::b:p:45:p}, space ::95:x, par b {comp backButton::b:p::p, comp button2::b:p::p}, space :p:23:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "titleLbl"
+				"text": "\"  Your Last Status : \""
+				"font": new java.awt.Font( "Times New Roman", 3, 38 )
+				"horizontalAlignment": 0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "iconLbl"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/view/status-179x179.png" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "nameLbl"
+				"text": "Name :"
+				"font": new java.awt.Font( "Sitka Text", 2, 28 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "idLbl"
+				"text": "ID :"
+				"font": new java.awt.Font( "Sitka Text", 2, 28 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "postLbl"
+				"text": "Post :"
+				"font": new java.awt.Font( "Sitka Text", 2, 28 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "salaryLbl"
+				"text": "Salary :"
+				"font": new java.awt.Font( "Sitka Text", 2, 28 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "nameTxt"
+				"background": new java.awt.Color( 232, 232, 232, 232 )
+				"font": new java.awt.Font( "Yu Gothic UI Semilight", 3, 24 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "idTxt"
+				"font": new java.awt.Font( "Yu Gothic UI Semilight", 3, 24 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "postTxt"
+				"font": new java.awt.Font( "Yu Gothic UI Semilight", 3, 24 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "salaryTxt"
+				"font": new java.awt.Font( "Yu Gothic UI Semilight", 3, 24 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backButton"
+				"text": "Back"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Show Requests"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 630, 510 )
+		} )
+	}
+}

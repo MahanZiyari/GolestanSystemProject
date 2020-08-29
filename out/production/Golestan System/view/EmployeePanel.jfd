@@ -1,0 +1,104 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "1.8.0_202-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:29:p, par l {seq {comp postLbl:::p:70:p, space s:::p, comp postTxt:::p:200:p}, seq {comp idLbl:::p:70:p, space s:::p, comp idTxt:::p:200:p}, seq l {comp nameLbl:::p:70:p, space s:::p, comp nameTxt:::p:200:p}}, space ::72:x, comp iconLbl:::p:369:p, space :::p}}"
+			"$verticalGroup": "par l {seq {par l {seq {space :p:69:p, par b {comp nameLbl::b:p:28:p, comp nameTxt::b:p:35:p}, space s:::p, par b {comp idLbl::b:p:28:p, comp idTxt::b:p:35:p}, space s:::p, par t {comp postLbl:::p:28:p, comp postTxt:::p:35:p}}, seq l {space :::p, comp iconLbl:::p:330:p}}, space ::128:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "nameLbl"
+				"text": "Name :"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "idLbl"
+				"text": "ID :"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "postLbl"
+				"text": "Post :"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 2, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "nameTxt"
+				"text": "text"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 2, 2, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "idTxt"
+				"text": "text"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 2, 2, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "postTxt"
+				"text": "text"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 2, 2, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "iconLbl"
+				"horizontalAlignment": 0
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/view/Employee Icon.png" )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "EmployeeMenu"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "viewMenu"
+					"text": "View"
+					"font": new java.awt.Font( "Times New Roman", 1, 20 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "salaryItem"
+						"text": "Salary"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						"background": new java.awt.Color( 255, 226, 219, 255 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "salaryItemActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "statusItem"
+						"text": "Full Record Of Employee Latest Status"
+						"background": new java.awt.Color( 255, 226, 219, 255 )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "statusItemActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "recordsMenu"
+					"text": "Records"
+					"font": new java.awt.Font( "Times New Roman", 1, 20 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "editItem"
+						"text": "Edit Information"
+						"background": new java.awt.Color( 255, 226, 219, 255 )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "editItemActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "enterRecordsItem"
+						"text": "Entering Records"
+						"background": new java.awt.Color( 255, 226, 219, 255 )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "enterRecordsItemActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "requestMenu"
+					"text": "Requests"
+					"font": new java.awt.Font( "Times New Roman", 1, 20 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "loanItem"
+						"text": "Loan And Time Off"
+						"background": new java.awt.Color( 255, 226, 219, 255 )
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loanItemActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 766, 526 )
+		} )
+	}
+}

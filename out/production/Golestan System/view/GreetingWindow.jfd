@@ -1,0 +1,66 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "1.8.0_202-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"foreground": sfield java.awt.Color black
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "loginButton"
+				"text": "LOG IN"
+				"font": new java.awt.Font( "Segoe UI", 1, 17 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "loginButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 371
+				"y": 304
+				"width": 100
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "exitButton"
+				"text": "EXIT"
+				"font": new java.awt.Font( "Segoe UI", 1, 17 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "exitButtonMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "exitButtonKeyReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 371
+				"y": 360
+				"width": 100
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "iconLbl"
+				"horizontalAlignment": 0
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/view/golestan.jpg" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 210
+				"width": 428
+				"height": 218
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "uscIcon2"
+				"horizontalAlignment": 0
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/view/uscIcon1.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 656
+				"y": 14
+				"width": 198
+				"height": 190
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "uscIcon1"
+				"horizontalAlignment": 0
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/view/uscIcon1.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 6
+				"y": 6
+				"width": 198
+				"height": 190
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 26, 15 )
+			"size": new java.awt.Dimension( 894, 445 )
+		} )
+	}
+}

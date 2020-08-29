@@ -1,0 +1,81 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, comp scrollPane1::::923:x, space :::p}, seq l {par l {seq l {space :p:15:p, comp textField:::p:548:p}, seq l {space :p:27:p, comp textLbl:::p:310:p}}, space :p:94:p, par t {seq {comp requestButton:::p:112:p, space :::p, comp backButton:::p:112:p}, par l {comp subjectCombo:::p:240:p, comp subjectLbl:::p:257:p}}, space :0:21:x}}"
+			"$verticalGroup": "par l {seq l {space :p:27:p, comp scrollPane1:::p:301:p, space s:::p, par b {comp textLbl::b:p:29:p, comp subjectLbl::b:p:29:p}, space :::p, par l {seq {comp subjectCombo:::p:50:p, space :::x, par b {comp requestButton::b:p:40:p, comp backButton::b:p:40:p}}, comp textField:::p:209:p}, space ::28:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "logTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( "" )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( "" )
+						} )
+					}, new java.util.Vector {
+						add( "ID" )
+						add( "Date And Time" )
+						add( "SUBJECT" )
+					}, new java.util.Vector {
+						add( class java.lang.Long )
+						add( class java.lang.String )
+						add( class java.lang.String )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( new com.jformdesigner.model.SwingTableColumn( null, 170, 0, 0, true ) )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 170, 0, 0, true ) )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 155, 0, 0, true ) )
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "textLbl"
+				"text": "Enter The Text Here :"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "subjectCombo"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "Apply For A Loan"
+					addElement( "Apply For A Loan" )
+					addElement( "Take Time Off" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "subjectLbl"
+				"text": "Choose The Subject :"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 8, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backButton"
+				"text": "BACK"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "backButtonMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "requestButton"
+				"text": "REQUEST"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "requestButtonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 750, 526 )
+		} )
+	}
+}

@@ -1,0 +1,70 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "1.8.0_202-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, comp scrollPane1::::466:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp scrollPane1::::121:x, space :::p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( "tuition status" )
+							add( "522" )
+							add( "report" )
+						} )
+						add( new java.util.Vector {
+							add( "student information" )
+							add( "101" )
+							add( "report" )
+						} )
+						add( new java.util.Vector {
+							add( "weekly schedule" )
+							add( "77" )
+							add( "report" )
+						} )
+						add( new java.util.Vector {
+							add( "presented courses" )
+							add( "110" )
+							add( "report" )
+						} )
+						add( new java.util.Vector {
+							add( "enrollment" )
+							add( "256" )
+							add( "operation" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "" )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "title" )
+						add( "number" )
+						add( "type" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( new com.jformdesigner.model.SwingTableColumn( null, 245, 0, 0, false ) )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 0, 0, 0, false ) )
+						add( new com.jformdesigner.model.SwingTableColumn( null, 0, 0, 0, false ) )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 45, 120 )
+			"size": new java.awt.Dimension( 480, 165 )
+		} )
+	}
+}
